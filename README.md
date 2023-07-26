@@ -1,7 +1,7 @@
 # Visualise-Missing-Data-And-Detect-Dutliers
 ## Visualizing Missing Data and Detecting Outliers
 ### **Introduction**
-This Jupyter Notebook aims to visualize missing data in the City of Los Angeles crime dataset, starting from 2020. We would also attempt to visualize outliers in the data set and eliminate these outliers. The dataset contains comprehensive records of crime incidents sourced from original crime reports, some of which were originally typed on paper, leading to potential inaccuracies. Additionally, certain location fields may contain missing data denoted as (0°, 0°). For privacy reasons, address fields are limited to the nearest hundred blocks. While the data is generally reliable, any questions or concerns can be addressed through comments.
+This Jupyter Notebook aims to visualize missing data in the City of Los Angeles crime dataset, starting from 2020. We would also attempt to visualize outliers in the data set and eliminate these outliers. The dataset contains comprehensive records of crime incidents sourced from original crime reports, some of which were originally typed on paper, leading to potential inaccuracies. For privacy reasons, address fields are limited to the nearest hundred blocks. While the data is generally reliable, any questions or concerns can be addressed through comments.
 
 ### **Dataset Description**
 The dataset consists of various columns representing different attributes of crime incidents in Los Angeles. We will read the CSV file and perform an analysis to visualize the presence of missing data using Plotly. The original dataset can be found here: https://www.kaggle.com/datasets/venkatsairo4899/los-angeles-crime-data-2020-2023.
@@ -13,6 +13,8 @@ The dataset consists of various columns representing different attributes of cri
 4. Detecting Outliers using Isolation Forest
 5. Detecting Outliers using Seasonal Hybrid ESD Test
 6. Outlier Detection in Categorical Data based on Frequency Distributions
+
+Outliers were detected primarily using machine learning techniques like the Isolation Forest Algorithm and Statistical outlier detection techniques like the seasonal hybrid ESD test. 
 
 #### Detecting Outliers using Isolation Forest:
 **Overview**: Isolation Forest is an unsupervised machine learning algorithm used for detecting outliers in datasets. It is particularly effective for high-dimensional datasets and works well when the majority of data points are close together, and outliers are few and far apart.
